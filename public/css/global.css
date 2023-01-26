@@ -1,0 +1,195 @@
+.container-fluid {
+    padding-left: 2rem !important;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.table {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.table-group-divider {
+    border-top-color: #dee2e6 !important;
+}
+
+.table td:first-of-type,
+.table th:first-of-type {
+    padding-left: 1.5rem;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    /* line-height: 0 !important; */
+}
+
+.action-button {
+    color: #505050;
+}
+
+.action-button:hover {
+    color: #686868;
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover{
+    background-color: #fd6323 !important;
+    border : 1px solid #fd6323 !important;
+}
+.btn-primary:focus,
+.btn-primary:active{
+    box-shadow: 0 0 0 0.3rem #e0881640 !important;
+    /* box-shadow: 0 0 0 0 !important; */
+}
+
+/* .dropdown-item:active {
+    background-color: #fd6323 !important;
+} */
+
+/* Breadcrumbs */
+.breadcrumb a {
+    text-decoration: none;
+}
+
+
+/* Buat Paket */
+
+.card-body {
+    padding: 0;
+    overflow: hidden;
+}
+
+.parent-list {
+    margin: 0;
+}
+
+.form-check {
+    display: inline-block;
+    width: 95%;
+    /* margin-bottom: 0.5rem; */
+}
+
+.caret,
+.first_level {
+    cursor: pointer;
+    user-select: none;
+    /* display: inline-block; */
+    /* padding: 0.3em 0.1em; */
+    /* width: 100%; */
+}
+
+.caret-icon {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}
+
+.caret-icon.rotate {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.nested {
+    max-height: 0px;
+    -webkit-transition: max-height 0.2s ease-in-out;
+    -moz-transition: max-height 0.2s ease-in-out;
+    -ms-transition: max-height 0.2s ease-in-out;
+    -o-transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.show-children {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -ms-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.number-spinner .btn {
+    width: 2.8em;
+}
+
+li.child {
+    padding-left: 1.8em !important;
+}
+
+fieldset .form-control:disabled, .form-control[readonly] {
+    background-color: #f7f7f7;
+    color: #6c757d;
+}
+
+.fitur-terpilih .parent {
+    overflow: hidden;
+    /* padding-bottom: .125rem; */
+}
+
+.parent-list,
+.parent-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.parent-list ul {
+    margin-left: 1em;
+    position: relative;
+}
+.parent-list ul ul {
+    margin-left: 0.5em;
+}
+.parent-list ul:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.75em;
+    border-left: 1px solid rgb(151 151 165);
+}
+
+.parent-list li {
+    margin: 0;
+    padding: 0.3em 1em;
+    position: relative;
+}
+.parent-list ul li:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid rgb(151 151 165);
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0.75em;
+}
+.parent-list ul li:last-child:before {
+    background: #fff;
+    height: auto;
+    top: 1em;
+    bottom: 0;
+}
+
+.tree-padding {
+    cursor: pointer;
+    border-radius: 5px;
+    padding-left: 0.3em;
+    display: inline-block;
+    width: 100%;
+}

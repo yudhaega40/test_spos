@@ -1,0 +1,16 @@
+.multiple-checkbox{
+	padding-left: 20px;
+	text-decoration: none;
+	margin: 0;
+}
+.multiple-checkbox li{
+	margin-top: 4px;
+}
+.multiple-checkbox .custom-control-label{
+	font-weight: 400;
+	color: #666;
+}
+
+.form-group.row {
+	margin: 1em 0;
+}
