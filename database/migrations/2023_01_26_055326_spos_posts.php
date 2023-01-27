@@ -16,9 +16,9 @@ class SposPosts extends Migration
         Schema::create('spos_posts',function(Blueprint $table){
             $table->id('post_id');
             $table->integer('user_id');
-            $table->integer('category_id');
-            $table->integer('photo_id');
-            $table->char('title',255);
+            $table->integer('category_id')->nullable();
+            $table->integer('photo_id')->nullable();
+            $table->char('title',100);
             $table->text('post');
         });
     }

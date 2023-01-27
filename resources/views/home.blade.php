@@ -27,7 +27,7 @@
                         }
                         @endphp
                     </p>
-                    <a href="#">Read more</a>
+                    <a href="detail_post/{{$p->post_id}}">Read more</a>
                 </div>
             </div>
             @endforeach

@@ -22,7 +22,7 @@ Route::get('/login', function () {
 });
 Route::post('/postlogin', [MainController::class, 'postlogin']);
 Route::get('/home', [MainController::class, 'home']);
-Route::get('/new_post', function () {
-    return view('new_post');
-});
+Route::get('/new_post', [MainController::class, 'new_post']);
+Route::post('/posting', [MainController::class, 'posting'])->name('post-simpan');
+Route::get('/detail_post/{id}', [MainController::class, 'detail_post']);
 Route::get('/logout', [MainController::class, 'logout']);

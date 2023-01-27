@@ -15,7 +15,7 @@ class SposPhotos extends Migration
     {
         Schema::create('spos_photos',function(Blueprint $table){
             $table->id('photo_id');
-            $table->char('photo_dir',255);
+            $table->char('photo_dir',255)->nullable();
         });
     }
 
