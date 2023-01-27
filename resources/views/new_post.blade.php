@@ -12,9 +12,9 @@
             </div>
         </div>
         <div id="content">
-            <div class="row">
-                <form action="{{ route('post-simpan') }}" method='post' enctype="multipart/form-data">
-                    @csrf
+            <form action="{{ route('post-simpan') }}" method='post' enctype="multipart/form-data">
+                @csrf
+                <div class="row">
                     <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <input 
                             type="text" 
@@ -63,8 +63,8 @@
                             <button class="btn btn-primary"><i class="fa fa-save"></i> Post</button>
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 @endsection
